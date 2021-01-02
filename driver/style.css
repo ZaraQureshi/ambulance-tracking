@@ -1,0 +1,248 @@
+body{
+	padding:0;
+	margin:0;
+	background:#F8F8F8;
+	overflow-x: hidden; 
+
+}
+/* The side navigation menu */
+.sidenav {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	background-color: #111; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+	color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+	transition: margin-left .5s;
+	padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
+.register form{
+	text-align: center;
+	width:100%;
+}
+.register{
+	
+	width:400px;
+	text-align: center;
+	background:white;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.register form input{
+	height:40px;
+	padding:1% 5%;
+	border-radius: 5px;
+	width:300px;
+	border:grey 1px solid;
+}
+.register button{
+	
+	padding:8px 20px;
+	border-radius: 60px;
+	background-color:  #8E2DE2;
+	color:white;
+	border:none;
+}
+.register img{
+	transform: translateY(-50px);
+	width:100px;
+	height:100px;
+}
+.login{
+	width:400px;
+	text-align: center;
+	background:white;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login button{
+	padding:8px 50px;
+	border-radius: 60px;
+	background-color:  #8E2DE2;
+	color:white;
+	border:none;
+}
+.login img{
+	transform: translateY(-50px);
+	width:100px;
+	height:100px;
+}
+.login form input{
+	border-radius: 5px;
+	width:300px;
+	border:grey 1px solid;
+	height:40px;
+	padding:1% 5%;
+}
+/*.navbar{
+	display: flex;
+	padding:2% 2% 1% 2%;
+	justify-content: space-between;
+	background-color: white;
+	
+	font-family: 'Merriweather', serif;
+}
+.nav_content{
+	display: flex;
+    justify-content: space-around;
+    width:40%;
+     padding-right:2%; 
+}
+.nav_content ul{
+	display:flex;
+	list-style-type: none;
+
+	
+}
+.nav_content li{
+	justify-content: space-between;
+	padding-right: 30px;
+	
+}
+.burger{
+	height: 100%;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding-left:40%;
+    display:none;
+}
+*/
+
+
+.user_info{
+	margin:3% 10% 3% 10%;
+}
+.sidebar{
+	transition: 0.5s ease;
+	
+}
+.sideMenu{
+	position:fixed;
+	top:40px;
+	bottom:0;
+	left:0;
+	margin: 1% auto auto auto;
+	width:200px;
+	margin-right:0;
+	transform:translateX(0);
+	z-index:2000;
+	background-color: white;
+}
+.content{
+	width: 100%;
+	transition: all ease 0.2s;
+	/* margin-left: 100px; */
+}
+.wrapper{
+	width:100%;
+}
+.nav-link:hover{
+	background-color: #C0C0C0;
+}
+
+.nav-link span{
+	margin-left:10px;
+}
+.nav-link i{
+	margin-left:10px;
+	font-size: 20px;
+	display:inline-flex;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+}
+
+@media screen and (max-width:800px){
+	.about{
+		padding-bottom: 50px;
+		height:70%;
+	}
+	.steps{
+
+		grid-template-columns: repeat(2,1fr);
+	}
+	.about_img{
+		width:300px;
+	}
+
+}
+@media screen and (max-width:992px){
+	.sideMenu{
+		display:none;
+	}
+	.nav_content{
+		display:flex;
+		position: absolute;
+		
+		text-align: center;
+		align-items: center;
+
+	}
+	.nav_content li{
+		opacity:0;
+
+	}
+	.burger{
+		display: block;
+		cursor:pointer;
+	}
+	.steps{
+		grid-template-columns: repeat(1,1fr);
+	}
+	.about{
+		padding-bottom: 50px;
+		height:70%;
+	}
+	.about_img{
+		display:none;
+	}
+	.sideMenu{
+		transform: translateX(-100%);
+	}
+	.content{
+		margin-left:0px;
+	}
+}
